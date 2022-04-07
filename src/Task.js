@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
 import './Task.css';
 
 
@@ -27,9 +27,9 @@ export default function Task() {
 
       const apiDataGrid = data.map((content, id)=>(
 <>
-<div className='col-4 '>
-       <img  className='picture' src={content.download_url}  alt="im" />
-</div>
+               <div className='col-4 '>
+                  <img  className='picture' src={content.download_url}  alt="im" />
+               </div>
 </>
 
       ))
@@ -44,27 +44,51 @@ export default function Task() {
         </>
       ))
 
+
+      const apiDataCarousel = data.map((content, id)=>(
+        <>
+            <div className='test'>
+            <img className='picture-card' src={content.download_url}  alt="im" />
+    </div>
+        </>
+      ))
+
 return(
     <>
     {/* GRID */}
     <div className='container'>
-    <div className='row justify-content-center'>
-    {apiDataGrid}  
+       <div className='row justify-content-center'>
+          {apiDataGrid}  
+       </div>
     </div>
- 
-     </div>
      
      {/*CARDS */}
 
      <div className='container'>
-     <div className='row cards justify-content-center'>
-    
-    {apiDataCards}  
-</div>
-
+         <div className='row cards justify-content-center'>
+          {apiDataCards}  
+         </div>
      </div>
 
 
+    {/* CAROUSEL */}
+
+
+    {/* <div className='container'>
+         <div className='row cards justify-content-center'>
+          {apiDataCarousel}  
+         </div>
+     </div> */}
+
+<div className='container-carousel'>
+       <Carousel>
+       {data.map(content => (
+          <Carousel.Item key={content.id}>
+          <img className='picture-carousel d-block' src={content.download_url}  alt="im" />
+          </Carousel.Item>
+       ))}
+       </Carousel>
+</div>
     </>
 )
 
