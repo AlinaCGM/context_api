@@ -7,7 +7,7 @@ import './Task.css';
 export default function Task() {
 
     const [data, setData]=useState([])
-
+  
 
     useEffect(() => {
         const getData = async (id) => {
@@ -43,15 +43,16 @@ export default function Task() {
               </div>
         </>
       ))
-
-
-      const apiDataCarousel = data.map((content, id)=>(
-        <>
-            <div className='test'>
-            <img className='picture-card' src={content.download_url}  alt="im" />
-    </div>
-        </>
-      ))
+        
+ 
+ 
+    //   const apiDataCarousel = data.map((content, id)=>(
+    //     <>
+    //         <div className='test'>
+    //         <img className='picture-card' src={content.download_url}  alt="im" />
+    // </div>
+    //     </>
+    //   ))
 
 return(
     <>
@@ -80,11 +81,11 @@ return(
          </div>
      </div> */}
 
-<div className='container-carousel'>
+<div  className='container-carousel'>
        <Carousel>
        {data.map(content => (
-          <Carousel.Item key={content.id}>
-          <img className='picture-carousel d-block' src={content.download_url}  alt="im" />
+          <Carousel.Item  key={content.id}>
+          <img className='picture-carousel' src={content.download_url}  alt="im" />
           </Carousel.Item>
        ))}
        </Carousel>
