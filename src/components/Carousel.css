@@ -1,0 +1,13 @@
+.container-carousel {
+    width: 80%;
+    margin:auto;
+    height: 400px;
+    background-color:rgb(54, 49, 49);
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  .picture-carousel {
+     width:0%;
+     height:auto;
+  }
+  
