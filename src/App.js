@@ -1,16 +1,16 @@
-// import Task from './Task';
-import Cards from './components/Cards';
-import Grid from './components/Grid';
-import CarouselSlider from './components/CarouselSlider';
+import Task from './Task';
+// import Cards from './components/Cards';
+// import Grid from './components/Grid';
+// import CarouselSlider from './components/CarouselSlider';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     {/* <Task/> */}
-     <CarouselSlider/>
+     <Task/>
+     {/* <CarouselSlider/>
     <Cards/>
-    <Grid/>
+    <Grid/> */}
     </div>
   );
 }
