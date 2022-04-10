@@ -1,37 +1,30 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Grid.css';
-import { useFetchCustom } from '../useFetchCustom';
-
-
-
+import React, { useContext } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../Task.css'
+import { AppContext } from '../context/AppContext'
 
 function Grid() {
-
-    const {data,loading,error} = useFetchCustom('https://picsum.photos/v2/list?page=9&limit=6')
-    
-  
+  const { setCardsMode, setGridMode, apiData } = useContext(AppContext)
 
 
-const apiDataGrid = data.map((content, id)=>(
-<>
-{loading && <h1>Loading...</h1>}
-              {data && <div className='col-4 '>
-                  <img  className='image-grid' src={content.download_url}  alt="im" />
-               </div>
-              }
-</>
+  return (
+    <div className='grid-container'>
+      Grid Mode
+      <div className='row justify-content-center test-second'>{apiData.map((item)=>
+      (<div className='col-4 grid'>{item}</div>))}</div>
+      
+      <button
+      className='btn btn-secondary w-25 m-3'
+        onClick={() => {
+          setCardsMode(true)
+          setGridMode(false)
+        }}
+      >
+        Cards Mode
+      </button>
+    </div>
+  )
+}
 
-      ))
- if(error){
-    alert(error)
- }
-    return (
-        <div className='container'>
-        <div className='row justify-content-center'>
-        {apiDataGrid}
-        </div>
-     </div>
-    );
-  }
-  
-  export default Grid;
+export default Grid
+
