@@ -9,7 +9,7 @@ function Grid() {
 
   return (
     <div className='grid-container'>
-      Grid Mode
+      
       <div className='row justify-content-center test-second'>{apiData.map((item)=>
       (<div className='col-4 grid'>{item}</div>))}</div>
       

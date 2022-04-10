@@ -11,7 +11,7 @@ function Cards() {
   return (
     <Card className='container-cards'>
       
-      <Card.Body className='row justify-content-center '>{apiData.map((item)=>
+      <Card.Body className='row justify-content-center '>{apiData.slice(0,3).map((item)=>
       (<div className='col-3 cards'>{item}</div>))}
       </Card.Body>
      

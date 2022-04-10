@@ -33,7 +33,9 @@ export default function Task() {
     <>
       <div className='container-home'>
         <div className='row justify-content-center'>
-         <h2 className='mt-5'>Home Page</h2> 
+        <div className="logo"> </div>
+         <h2 className='mt-5'>Home Page
+         </h2> 
           <button
           className='btn btn-secondary w-25 m-3'
             onClick={() => {
