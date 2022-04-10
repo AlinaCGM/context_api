@@ -17,7 +17,7 @@
 /* CARDS */
 .container-cards {
   border:none;
-  width:100%;
+  width:80%;
   height: auto;
   margin: 5rem 0 5rem 0 ;
   
@@ -28,14 +28,6 @@
  margin: 5px;
  cursor: pointer;
 }
-
-
-/* .card-text {
-  padding-top: 2rem;;
-  font-size: 12px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-} */
 
 .image {
   width: 100%;
@@ -73,3 +65,26 @@
 .btn {
   align-self: center;
 }
+
+/* CAROUSEL-MultipleItems */
+
+.slider-container  {
+  width:80%;
+  height: auto;
+  margin: 5rem 0 5rem 0 ;
+  background-color: grey;
+  padding-bottom: 2rem;
+}
+
+.slider {
+  
+  width:90%;
+  margin:auto;
+}
+.slick-items {
+  border:2px solid red;
+  padding:1rem;
+  width:auto;
+  height: 300px;
+}
+

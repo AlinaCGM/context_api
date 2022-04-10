@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card'
 import { AppContext } from '../context/AppContext'
 
 function Cards() {
-  const { setCardsMode, setGridMode, apiData } = useContext(AppContext)
+  const {  apiData } = useContext(AppContext)
 
 
   return (
@@ -14,15 +14,7 @@ function Cards() {
       <Card.Body className='row justify-content-center '>{apiData.map((item)=>
       (<div className='col-3 cards'>{item}</div>))}
       </Card.Body>
-      <button
-      className='btn btn-secondary w-25 m-3'
-        onClick={() => {
-          setGridMode(true)
-          setCardsMode(false)
-        }}
-      >
-        Grid Mode
-      </button>
+     
     </Card>
   )
 }
