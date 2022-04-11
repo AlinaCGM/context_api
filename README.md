@@ -1,3 +1,28 @@
+# Flowbox
+
+## To Use
+
+To clone and run this repository you'll need [Git](https://git-scm.com)
+
+```bash
+# Clone the repository
+git clone https://github.com/AlinaCGM/flowbox.git
+# Go into the repository
+cd flowbox
+# Install dependencies
+npm install
+# Run the app
+npm start
+
+# It will normally open on (http://localhost:3000) in a new browser window automatically
+```
+
+## License
+
+MIT
+
+# General information:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
