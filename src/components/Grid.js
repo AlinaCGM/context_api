@@ -11,7 +11,7 @@ function Grid() {
     <div className='grid-container'>
       {/* mapping and displaying the results */}
       <div className='row justify-content-center test-second'>{apiData.map((item, id)=>
-      (<div className='col-4 grid' key={id}>{item}</div>))}</div>
+      (<div className='col-5 col-md-4 grid' key={id}>{item}</div>))}</div>
       
       
     </div>

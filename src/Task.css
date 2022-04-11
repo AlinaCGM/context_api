@@ -17,9 +17,16 @@ h2 {
 .btn{
   font-size: 12px;
   background-color: #5d737e;
-  width:25%;
-  height: 50px;
+  width:15%;
+  height: 30px;
   margin: 10px;
+  align-self: center;
+}
+@media(min-width: 768px) {
+  .btn {
+    width:100px;
+    height: 40px;
+  }
 }
 /* GRID  */
 .grid-container {

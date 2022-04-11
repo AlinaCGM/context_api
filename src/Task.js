@@ -50,7 +50,7 @@ export default function Task() {
         <div className="logo"> </div>
          <h2 className='mt-5'>Home Page
          </h2> 
-          <button
+        <div>  <button
           className='btn btn-secondary'
             onClick={() => {
               setCardsMode(false)   // buttons logics
@@ -83,6 +83,7 @@ export default function Task() {
           >
             Carousel 
           </button>
+          </div>
           {/* wrapping the components in parent element and specifying the values which will be used */}
           <AppContext.Provider value={{ setGridMode, setCardsMode,setCarouselMode, apiData, apiDataText }}>   
             {cardMode && <Cards />}
