@@ -1,5 +1,6 @@
 .container-home {
   background-color:#FAFAFA;
+  height: fit-content;
 }
 .logo {
   width:50%;
