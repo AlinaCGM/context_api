@@ -7,7 +7,7 @@ import Slider from "react-slick";
 
   
     function MultipleItems  () {
-      const {  apiData } = useContext(AppContext)
+      const {  apiData } = useContext(AppContext)  // importing data from the context
 
         const settings = {
           dots: true,
@@ -44,11 +44,11 @@ import Slider from "react-slick";
         }
         return (
           <div className='slider-container'>
-            <h2> Multiple items </h2>
-           
-           
-            <Slider {...settings} className='slider'>{apiData.map((item)=>
-      (<div className='slick-items' >{item}</div>))}</Slider>
+          
+                 {/* mapping and displaying the results */}
+
+            <Slider {...settings} className='slider'>{apiData.map((item, id)=>
+      (<div className='slick-items'key={id} >{item}</div>))}</Slider>
       
       
              

@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react'
 
-export function useFetchCustom() {
-  const [data, setData] = useState([])
+export function useFetchCustom() {   // custom hook
+  const [data, setData] = useState([])      
   const [error, setError] = useState('')
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)  
 
-  useEffect(() => {
+  useEffect(() => {  
     setLoading(true)
-    fetch('https://picsum.photos/v2/list?page=9&limit=6')
-      .then((response) => response.json())
+    fetch('https://picsum.photos/v2/list?page=19&limit=6')  //getting and fetching data from the API
+      .then((response) => response.json())                  // data to json
       .then(setData)
       .catch(setError)
-      .finally(() => setLoading(false))
+      .finally(() => setLoading(false))   // error handling
   }, [])
 
-  return { data, error, loading }
+  return { data, error, loading }  
 }
+ 
