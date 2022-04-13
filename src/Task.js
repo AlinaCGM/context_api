@@ -33,7 +33,7 @@ export default function Task() {
       {loading && <h1>Loading...</h1>} 
       {data && (
         <>
-          <img className='image card-text' src={text.download_url} alt='im' />
+          <img  className='image card-text' src={text.download_url} alt='im' />
         {text.author}
         </>
       )}
