@@ -42,6 +42,7 @@ export default function Task() {
   if (error) {
     alert(error)
   }
+  
 
   return (
     <>
@@ -53,7 +54,7 @@ export default function Task() {
         <div>  <button
           className='btn btn-secondary'
             onClick={() => {
-              setCardsMode(false)   // buttons logics
+          setCardsMode(false)   // buttons logics
           setGridMode(true)
           setCarouselMode(false)
           setGridMode(!gridMode)
