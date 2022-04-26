@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import '../Task.css'
 import { AppContext } from '../context/AppContext'
-import Slider from "react-slick";
+import Slider from "react-slick"
 
 
   

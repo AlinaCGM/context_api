@@ -2,7 +2,7 @@
   background-color:#FAFAFA;
   height: fit-content;
 }
-.logo {
+/* .logo {
   width:50%;
   height: 50px;
   background-image: url(./images/flow.png);
@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 4rem;
-}
+} */
 h2 {
   color: #243342;
   font-family: 'Montserrat', sans-serif;
